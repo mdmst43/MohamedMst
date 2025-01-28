@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed El Moustapha's Life</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+    }
+    #guess-section, #friend-section {
+      margin-top: 20px;
+    }
+    #result, #friend-result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: green;
+    }
+    .writing {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Mohamed El Moustapha's Life</h1>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#writings">My Writings</a>
+  </nav>
+  <section id="home">
+    <h2>Home</h2>
+    <p>Are you interested in knowing more about Mohamed’s life?</p>
+    <button onclick="location.href='#about'">Yes, tell me more!</button>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Mohamed El Moustapha, a passionate QA Engineer with a love for writing, football, and the pursuit of honesty. 
+      I believe in the power of self-reliance and always strive to do things on my own. My work as a QA Engineer has taught me 
+      the importance of attention to detail, problem-solving, and continuous improvement. Outside of work, I enjoy expressing 
+      myself through writing and staying active with my favorite sport, football.
+    </p>
+    <h3>Family</h3>
+    <p>
+      I come from a loving family. My father is Isselmou, and my mother is Hourou. I have 3 brothers and 4 sisters. 
+      My best friend is Abdarahmane, who has always been there for me through thick and thin.
+    </p>
+    <p>
+      In my future, I dream of building a beautiful life with my future wife, Haja Beyrouk. She is the love of my life, 
+      and I have so many plans and dreams to share with her.
+    </p>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Check out some pictures from my life!</p>
+    <img src="images/image1.jpg" alt="Me at the beach">
+    <img src="images/image2.jpg" alt="Family photo">
+    <img src="images/image3.jpg" alt="Traveling to the mountains">
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me:</p>
+    <ul>
+      <li>Phone: [Your Phone Number]</li>
+      <li>Email: medmousf@gmail.com</li>
+      <li>Social Media: 
+        <a href="https://snapchat.com/t/yvTCEQJG" target="_blank">Snapchat</a>, 
+        <a href="https://instagram.com/your-instagram" target="_blank">Instagram</a>
+      </li>
+    </ul>
+  </section>
+  <section id="writings">
+    <h2>My Writings</h2>
+    <p>Here are some of my writings:</p>
+    <div class="writing">
+      <h3>الصمت الرقمي والضياع في التأويلات</h3>
+      <p>
+        في عصور التواصل الفوري، أصبحت الرسائل النصية بمثابة جسر، لكنه جسر غير مستقر بين عالمين مختلفين: عالم المرسل وعالم المتلقي. الكلمات المكتوبة، على الرغم من قدرتها على نقل المعلومات، تفشل في نقل الروح الإنسانية وراء تلك الكلمات. في لحظات الغضب أو التوتر، يتحول هذا الجسر إلى حقل ألغام، حيث تنتظر الكلمات أن تنفجر بالتأويلات الخاطئة.
+      </p>
+      <p>
+        حين يرسل الإنسان رسالة نصية أثناء الشجار، فإنه غالبًا يفرغ ما بداخله من مشاعر، لكن في لحظة ما بعد الإرسال، تصبح الرسالة ملكًا لعالم آخر، عالم القارئ. يُقرأ النص الآن تحت تأثير مختلف: حالة القارئ النفسية، ظروفه اللحظية، ونبرة صوته الداخلية التي يختارها عند قراءة النص. هنا يكمن الخطر؛ فالمرسل يفقد السيطرة على رسالته، والنص يصبح مساحة مفتوحة للتأويلات المتعددة.
+      </p>
+    </div>
+  </section>
+  <section id="guess-section">
+    <h2>Guess Who Is Closest to Mohamed’s Heart?</h2>
+    <input type="text" id="guess-input" placeholder="Type your guess here...">
+    <button onclick="checkGuess()">Submit</button>
+    <p id="result"></p>
+  </section>
+  <section id="friend-section">
+    <h2>Here’s a Question for You:</h2>
+    <p>There’s one person I don’t talk to a lot, but she’s still my friend. We sometimes fight, but she’s special to me. Who is she?</p>
+    <input type="text" id="friend-input" placeholder="Type your guess here...">
+    <button onclick="checkFriend()">Submit</button>
+    <p id="friend-result"></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Mohamed El Moustapha. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function checkGuess() {
+      const guess = document.getElementById('guess-input').value.trim().toLowerCase();
+      const result = document.getElementById('result');
+
+      if (guess === 'haja') {
+        result.innerHTML = `
+          That’s right! Haja is Mohamed’s future wife, and he has so many beautiful plans with her. 
+          She is the light of his life, his partner in every journey, and the one who makes his heart beat faster. 
+          Mohamed loves Haja more than words can express, and he dreams of a future filled with love, laughter, and endless happiness with her.
+        `;
+      } else {
+        result.innerHTML = 'Try again!';
+      }
+    }
+
+    function checkFriend() {
+      const guess = document.getElementById('friend-input').value.trim().toLowerCase();
+      const result = document.getElementById('friend-result');
+
+      if (guess === 'deyja') {
+        result.innerHTML = `
+          That’s correct! Deyja is Haja’s best friend, and she holds a special place in my heart too. 
+          Even though we don’t talk a lot and sometimes have our disagreements, Deyja is someone who brings joy and happiness to Haja’s life. 
+          Seeing Haja happy because of her makes Deyja very special to me. She’s a kind-hearted person, and I appreciate her for being such a great friend to Haja.
+        `;
+      } else {
+        result.innerHTML = 'Try again!';
+      }
+    }
+  </script>
+</body>
+</html>
